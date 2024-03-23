@@ -8,7 +8,7 @@ import Layout from './Pages/Layout/Layout.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter classname="p-3 m-0 border-0 bd-example m-0 border-0">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>} />
