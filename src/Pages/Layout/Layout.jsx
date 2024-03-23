@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
+import "./Layout.css";
 
 export default function Layout(){
+
   return (
     <>
       <nav>
@@ -18,6 +20,10 @@ export default function Layout(){
       </nav>
 
       <Outlet />
+
+      <footer>
+        <p>Footer</p>
+      </footer>
     </>
   )
 };
