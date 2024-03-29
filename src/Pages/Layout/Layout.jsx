@@ -29,33 +29,7 @@ export default function Layout(){
 
       <Outlet />
 
-      {/* Footer */}
-      <footer className="bg-dark text-center text-white">
-        <div className="container p-4">
-          {/* Sección de redes sociales */}
-          <section className="mb-4">
-              {/* Ejemplo de botón de Facebook */}
-              <a className="btn btn btn-floating m-1" href="https://facebook.com" role="button">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Bootstrap" className="img-fluid" width="50" height="24"/>
-              </a>
-              {/* Agrega más botones de redes sociales aquí */}
-          </section>
 
-          {/* Sección de texto */}
-          <section className="mb-4">
-              <p>
-                  Aquí puedes usar filas y columnas para organizar tu pie de página. Bootstrap's grid system
-                  te permite crear un layout adaptativo y responsivo fácilmente.
-              </p>
-          </section>
-        </div>
-
-        {/* Derechos de autor */}
-        <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-            © 2024 Derechos reservados:
-            <a className="text-white" href="https://tusitioweb.com/">TuSitioWeb.com</a>
-        </div>
-      </footer>
 
     </>
   )
