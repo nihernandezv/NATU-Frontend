@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BiSearch } from 'react-icons/bi'; // Importa el ícono de búsqueda
 import "./Header.css";
 
