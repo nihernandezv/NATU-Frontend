@@ -1,7 +1,7 @@
 import React from 'react'
-import './Login.css'; // Importa estilos CSS
+import './Signup.css'; // Importa estilos CSS
 
-const Login = () => {
+const Signup = () => {
     return (
         <div>
             {/* Botón de Registro */}
@@ -10,7 +10,7 @@ const Login = () => {
                 className="btn btn-outline-primary ms-2 px-5 btn-register" 
                 data-bs-toggle="modal" 
                 data-bs-target="#/">
-                    <span className="fa fa-user-plus me-1"></span> Iniciar Sesión
+                    <span className="fa fa-user-plus me-1"></span> Registrarse
                 </button>
             {/* <!-- Modal --> */}
 
@@ -18,4 +18,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Signup
