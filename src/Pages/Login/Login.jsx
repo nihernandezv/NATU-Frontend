@@ -7,7 +7,7 @@ const Login = () => {
             {/* Botón de Registro */}
             <button 
                 type="button" 
-                className="btn btn-outline-primary ms-2 px-5 btn-register" 
+                className="btn btn-outline-primary ms-2 px-5 btn-login" 
                 data-bs-toggle="modal" 
                 data-bs-target="#/">
                     <span className="fa fa-user-plus me-1"></span> Iniciar Sesión
@@ -17,5 +17,4 @@ const Login = () => {
         </div>
     )
 }
-
 export default Login

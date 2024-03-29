@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Login from '../Login/Login';
-import Signup from '../Register/Signup';
+import Signup from '../Register/Signup'
 import './Layout.css'; // Importa el archivo CSS de estilos
 import { BiSearch } from 'react-icons/bi'; // Importa el ícono de búsqueda
 
@@ -21,7 +21,7 @@ const Layout = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
                 <div className="container-fluid py-2" style={{ backgroundColor: '#F9F7F8', color: 'black' }}>
                     <NavLink className="navbar-brand d-flex mx-auto fw-bold justify-content-center py4" to="/">
                         <img src="/natu_logo.png" alt="Logo" className="img-fluid" width="250" height="55"/>
