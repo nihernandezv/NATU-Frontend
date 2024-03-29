@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
     return (
-        <>
         <div>
             <div footer className='py-3' style={{ backgroundColor: '#D2D4F9', color: 'black' }}>
                 <div className='container'>
@@ -22,7 +21,7 @@ const Footer = () => {
                                 <Link to ='/' class='text-reset'>Inicio</Link>
                             </li>
                             <li>
-                                <Link to ='/Products' class='text-reset'>Productos</Link>
+                                <Link to ='/Products' class='text-reset'>Productoos</Link>
                             </li>
                             <li>
                                 <Link to ='/about' class='text-reset'>About</Link>
@@ -48,8 +47,6 @@ const Footer = () => {
             </div>
 
         </div>
-        </>
-        
     )
 }
 

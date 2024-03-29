@@ -5,7 +5,6 @@ import Product from './Pages/Product/Product.jsx';
 import Register from './Pages/Register/Register.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Layout from './Pages/Layout/Layout.jsx';
-import Footer from './Pages/Layout/footer.jsx';
 
 function App() {
   return (
