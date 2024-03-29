@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { BiSearch } from 'react-icons/bi'; // Importa el ícono de búsqueda
 import "./Header.css";
+import '../../../index.css';
 
 export default function Header() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -17,7 +18,7 @@ export default function Header() {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light shadow fontHeader">
           <div className="container-fluid py-2" style={{ backgroundColor: '#F9F7F8', color: 'black' }}>
               <Link className="navbar-brand d-flex mx-auto fw-bold justify-content-center py4" to="/">
                   <img src="/natu_logo.png" alt="Logo" className="img-fluid" width="250" height="55"/>
