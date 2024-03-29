@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
+        <>
         <div>
             <div footer className='py-3' style={{ backgroundColor: '#D2D4F9', color: 'black' }}>
                 <div className='container'>
@@ -47,6 +48,8 @@ const Footer = () => {
             </div>
 
         </div>
+        </>
+        
     )
 }
 
