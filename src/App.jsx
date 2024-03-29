@@ -5,6 +5,7 @@ import Product from './Pages/Product/Product.jsx';
 import Register from './Pages/Register/Register.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Layout from './Pages/Layout/Layout.jsx';
+import Reset from './Pages/Recover/Reset.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="product" element={<Product/>} />
           <Route path="register" element={<Register/>} />
           <Route path="login" element={<Login/>} />
+          <Route path="reset" element={<Reset/>} />
         </Route>
       </Routes>
     </BrowserRouter>

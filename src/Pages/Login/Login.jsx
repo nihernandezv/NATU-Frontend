@@ -27,16 +27,16 @@ export default function Login() {
                                             placeholder="Password"
                                             id="password"
                                         />
-                                        <a className="link2" href="Reset_password.html">
+                                        <a className="link2" href="Recover.jsx">
                                             Olvide mi contraseña
                                         </a>
                                         <input
                                             type="button"
                                             id="btnLogin"
-                                            className="btn btn-primary"
+                                            className="boton btn-primary"
                                             value="Iniciar sesión"
                                         />
-                                        <a className="link" href="registros.html">
+                                        <a className="ink 2"  href="Register.jsx">
                                             ¿Aun no estoy registrado?
                                         </a>
                                     </form>
