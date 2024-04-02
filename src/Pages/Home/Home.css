@@ -85,6 +85,40 @@
   height: 490px;
   border-radius: 15px; /* Bordes redondeados para la imagen */
 }
+/*Animaciones para la imágen*/
+.parallax-container {
+  position: relative;
+  height: 490px;
+  overflow: hidden;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .parallax-image {
+    animation: parallax 10s infinite linear;
+  }
+}
+
+@keyframes parallax {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-20%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 /* Estilos para el contenedor Acerca */
 .acerca-container {
@@ -188,3 +222,149 @@
   border-radius: 15px; /* Bordes redondeados para la imagen */
 }
 
+
+/* Estilos para el apartado Beneficios */
+.beneficios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #F8F8F8; /* Light beige */
+  width: 90%; /* Increased container width */
+  max-width: 1000px;
+  height: 1100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Contener imágenes que sobresalen */
+}
+
+.beneficios-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #B85A23; /* Color del título */
+}
+
+.beneficios-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px; /* Adjusted max-width for items */
+}
+
+.beneficio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 5px;
+  width: 250px; /* Reduced item width */
+  height: 260px; /* Added height to match width */
+  padding: 2rem;
+  background-color: #EAF2E8; /* Light green */
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.2s;
+  border: none; /* Removed border */
+}
+
+.beneficio-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.beneficio-item img {
+  width: 70px; /* Reduced image size */
+  height: 70px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-item h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem; /* Reduced heading size */
+  font-weight: 600;
+  color: #82B15A; /* Green text */
+  margin: 0;
+}
+
+.beneficio-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem; /* Reduced paragraph size */
+  font-weight: 400;
+  color: #666; /* Lighter text */
+  line-height: 1.3;
+  margin-top: 1rem;
+}
+
+.beneficios-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  width: 300px;
+  height: 50px;
+  background-color: #82B15A;
+  border: 2px solid #82B15A;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.beneficios-boton:hover {
+  background-color: #d7540b; /* Tono más oscuro al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+  .beneficios-container {
+    width: 90%;
+  }
+
+  .beneficio-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Ajustes adicionales para móviles */
+  .beneficios-titulo {
+    font-size: 1.8rem;
+  }
+
+  .beneficio-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .beneficio-item p {
+    font-size: 1.2rem;
+  }
+
+  .beneficios-boton {
+    width: 180px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Ajustes adicionales para una mejor visualización en móviles */
+@media (max-width: 480px) {
+  .beneficios-lista {
+    flex-direction: column;
+  }
+
+  .beneficio-item {
+    margin: 0.5rem;
+  }
+}

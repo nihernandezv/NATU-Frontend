@@ -33,8 +33,43 @@ code {
   font-optical-sizing: auto;
   font-weight: 520;
   font-style: normal;
-
-  
 }
 
+/* Estilos para el footer */
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #333;
+  color: #fff;
+  position: static;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  margin: 1rem;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  color: #ddd;
+}
 
