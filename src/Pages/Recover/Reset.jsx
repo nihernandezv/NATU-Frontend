@@ -32,7 +32,7 @@ export default function Register() {
       defaultValue="Regresar"
       onclick="window.location.href='login.html';"
     />
-    <a className="link" href="registros.html">
+    <a className="link" href="register">
       ¿Aun no estoy registrado?
     </a>
   </form>

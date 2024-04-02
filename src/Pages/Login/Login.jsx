@@ -27,7 +27,7 @@ export default function Login() {
                                             placeholder="Password"
                                             id="password"
                                         />
-                                        <a className="link2" href="Recover.jsx">
+                                        <a className="link2" href="reset">
                                             Olvide mi contraseña
                                         </a>
                                         <input
@@ -36,7 +36,7 @@ export default function Login() {
                                             className="boton btn-primary"
                                             value="Iniciar sesión"
                                         />
-                                        <a className="ink 2"  href="Register.jsx">
+                                        <a className="ink 2"  href="register">
                                             ¿Aun no estoy registrado?
                                         </a>
                                     </form>

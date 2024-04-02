@@ -22,7 +22,7 @@
 }
 .vinculos {
   margin-top: 20px;
-  font-weight: 550;
+  font-weight: 550px;
 }
 .link {
   margin-top: 10px;
@@ -38,27 +38,37 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: -120px; /* Ajusta este valor negativo para mover la imagen hacia arriba */
+   
   }
   
-  
-  
-form {
-  margin-top: 20px;
-  height: 970px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 25%; /* Ajusta este valor para mover el formulario hacia arriba */
-  left: 50%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(2, 25, 255, 0.1);
-  box-shadow: 0 0 40px rgba(3, 5, 16, 0.6);
-  padding: 50px 35px;
-}
 
+  
+  #login-form {
+    height: 950px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+
+footer {
+  position: fixed; /* Fija el footer en la parte inferior de la ventana */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Color de fondo del footer */
+  color: white; /* Color del texto del footer */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 10px 0; /* Añade un relleno interno al footer */
+}
 
 .background .shape {
   height: 200px;
