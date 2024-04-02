@@ -1,0 +1,190 @@
+/* Contenedor principal */
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 693px;
+  height: 780px;
+  left: 215px;
+  top: 200px;
+  margin-top: 5px;
+}
+
+/* Título del texto */
+.home-page-title {
+  width: 593px;
+  height: 247px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  color: #2B803F;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 0px;
+}
+
+/* Estilos del texto */
+.home-page-description {
+  width: 593px;
+  height: 147px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #828282;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 0px;
+}
+
+/* Estilos del botón */
+.home-page-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  gap: 10px;
+  width: 192px;
+  height: 60px;
+  background: #EB6613;
+  border-radius: 5rem;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+/* Estilos para la sección de la imagen */
+.home-image-section {
+  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
+  margin-left: 880px; /* Espacio izquierdo entre el texto y la imagen */
+  margin-top: 50px;
+}
+
+/* Estilos para la imagen */
+.home-banner-image {
+  width: 90%;
+  height: 490px;
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para el contenedor Acerca */
+.acerca-container {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 693px;
+  height: 780px;
+  left: 715px;
+  top: 830px;
+}
+
+/* Estilos para el texto del título */
+.titulo-texto {
+  width: 633px;
+  height: 247px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  color: #4C4C4C;
+  flex:none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 0px;
+
+}
+
+/* Estilos para el contenedor del párrafo */
+.texto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+  width: 741px;
+  height: 225px;
+  top: 10px;
+}
+
+/* Estilos para el párrafo */
+.parrafo-texto {
+  width: 593px;
+  height: 140px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  color: #828282;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+/* Estilos para el botón Leer Más */
+.leer-mas-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  gap: 10px;
+  width: 195px;
+  height: 60px;
+  background: #EB6613;
+  border-radius: 5rem;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+/* Estilos para la sección de la imagen tomatoes */
+.acerca-image-section {
+  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
+  margin-left: 150px; /* Espacio izquierdo entre el texto y la imagen */
+  margin-top: 160px;
+}
+
+/* Estilos para la imagen */
+.acerca-banner-image {
+  width: 90%;
+  height: 470px;
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+

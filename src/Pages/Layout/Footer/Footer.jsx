@@ -1,11 +1,12 @@
-import React from 'react'
+{/*import React from 'react'
 import { Link } from 'react-router-dom'
 import "../../../index.css";
 
+
 export default function Footer() {
     return (
-        <footer className='py-3 shadow-lg' style={{ backgroundColor: '#F9F7F8', color: 'black', boxShadow: '0 -5px 5px -5px rgba(0, 0, 0, .5)' }}>
-            <div className='container fontFooter'>
+        <footer className='py-3 shadow-lg min-vh-100' style={{ backgroundColor: '#F9F7F8', color: 'black', boxShadow: '0 -5px 5px -5px rgba(0, 0, 0, .5)' }}>
+            <div className='container fontFooter '>
             <nav className='row justify-content-between'>
                 <Link to='/' className='col-12 col-md-3 d-flex align-items-center justify-content-center'>
                     <img src="/Natu_Logo_.png" alt="Logo" className="img-fluid" width="150" height="50"/>
@@ -33,13 +34,13 @@ export default function Footer() {
                         <li className='fw-bold fs-7 mb-2'>Síguenos</li>
                         <li className='d-flex justify-content-between'>
                         <a href="https://www.facebook.com/TuPaginaDeFacebook" target="_blank" rel="noopener noreferrer">
-                            <i className="bi bi-facebook" style={{ fontSize: '2rem', color: 'blue' }}></i> {/* Aquí aumentamos el tamaño del ícono */}
+                            <i className="bi bi-facebook" style={{ fontSize: '2rem', color: 'blue' }}></i> {/* Aquí aumentamos el tamaño del ícono 
                         </a>
                         <a href="https://www.instagram.com/_natu_tienda/" target="_blank" rel="noopener noreferrer">
-                            <i className="bi bi-instagram" style={{ fontSize: '2rem', color: '#F78DA7'}}></i> {/* Aquí aumentamos el tamaño del ícono */}
+                            <i className="bi bi-instagram" style={{ fontSize: '2rem', color: '#F78DA7'}}></i> {/* Aquí aumentamos el tamaño del ícono 
                         </a>
                         <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
-                            <i className="bi bi-tiktok" style={{ fontSize: '2rem', color: 'black' }}></i> {/* Aquí aumentamos el tamaño del ícono */}
+                            <i className="bi bi-tiktok" style={{ fontSize: '2rem', color: 'black' }}></i> {/* Aquí aumentamos el tamaño del ícono 
                         </a> 
                         <a href="https://www.gmail.com/" target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-envelope" style={{ fontSize: '2rem', color: 'red' }}></i>
@@ -55,3 +56,4 @@ export default function Footer() {
         </footer>
     )
 }
+*/}

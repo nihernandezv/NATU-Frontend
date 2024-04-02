@@ -6,6 +6,7 @@ import '../../index.css';
 // import { BiSearch } from 'react-icons/bi'; // Importa el ícono de búsqueda
 import Footer from './Footer/Footer.jsx';
 import Header from './Header/Header.jsx';
+import Inicio from '../Home/Inicio.jsx';
 
 export default function Layout(){
 
@@ -16,9 +17,11 @@ export default function Layout(){
 
       {/* Main content */}
       <Outlet />
+      {/* Página de Inicio */}
+      <Inicio />
 
-      {/* Footer */}
-      <Footer />
+      {/* Footer 
+      <Footer />*/}
     </div>
   )
 };
