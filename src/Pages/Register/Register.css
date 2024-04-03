@@ -19,12 +19,13 @@
   --verde-2: #9fdf58;
   --registrarse-static: #f0fff0;
   --verde-3: #136c33;
+  --border1: #aaa
 }
 .vinculos {
   margin-top: 20px;
   font-weight: 550px;
 }
-.link {
+#link {
   margin-top: 10px;
   margin-right: 20px;
 }
@@ -32,7 +33,7 @@ body {
   background-color: var(--white);
 }
 
-.background {
+#background {
     width: 600px;
     height: 420px;
     position: absolute;
@@ -40,10 +41,9 @@ body {
     left: 50%;
    
   }
-  
-  #login-form {
-    height: 930px;
-    width: 400px;
+#register-form {
+    height: 1080px;
+    width: 600px;
     background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
     margin-top: 120px;
@@ -63,18 +63,18 @@ body {
   }
   
 
-.background .shape {
+#background #shape {
   height: 200px;
   width: 200px;
   position: absolute;
   border-radius: 50%;
 }
-.shape:first-child {
+#shape:first-child {
   background: linear-gradient(var(--orange), var(--orange-3));
   left: -80px;
   top: -80px;
 }
-.shape:last-child {
+#shape:last-child {
   background: linear-gradient(to right, var(--verde-1), var(--verde-2));
   right: -70px;
   bottom: -220px;
@@ -162,7 +162,7 @@ input {
 .go:hover {
   background-color: rgba(4, 215, 255, 0.47);
 }
-.rgt {
+#botonRegistro {
   margin-top: 20px;
   width: 100%;
   padding: 15px 25px;
@@ -178,9 +178,10 @@ input {
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
   overflow: hidden;
+  
 }
 
-.rgt ::before {
+#botonRegistro ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -195,7 +196,7 @@ input {
   transition: all 250ms;
 }
 
-.rgt:hover {
+#botonRegistro:hover {
   color: var(--registrarse-static);
   background-color: var(--verde-3);
 }
@@ -276,7 +277,7 @@ input:checked + .slider:before {
   transform: translateX(1.5em);
 }
 
-.img-centrada {
+#img-centrada {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +293,26 @@ input:checked + .slider:before {
   margin-top: -10px;
 }
 
-.col.direccion {
+.col{
   right: 10px;
   width: 70%; /* Ajusta el ancho del campo de dirección según sea necesario */
+  
+}
+
+#direccion{
+  border: 1px var(--border1) solid;
+  border-radius: 7px;
+  margin-bottom: 8px;
+
+}
+
+.username {
+  border: 1px var(--border1) solid;
+  border-radius: 7px;
+  margin-bottom: 8px;
+  transition: box-shadow 0.3s; /* Agrega una transición suave al cambio de sombra */
+}
+
+.username:focus {
+  box-shadow: 0 0 5px blue; /* Establece una sombra azul cuando el input está enfocado */
 }
