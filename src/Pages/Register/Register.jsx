@@ -8,7 +8,7 @@ export default function Register() {
     };
 
     return (
-        <>
+        <div className='register-container'>
             <title>Register | Natu</title>
             {/* Scripts */}
             <meta
@@ -70,6 +70,6 @@ export default function Register() {
                     </a>
                 </div>
             </form>
-        </>
+        </div>
     );
 }

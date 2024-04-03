@@ -1,10 +1,4 @@
-*,
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 :root {
   --light-blue: #c3dcfd;
@@ -28,9 +22,6 @@
 #link {
   margin-top: 10px;
   margin-right: 20px;
-}
-body {
-  background-color: var(--white);
 }
 
 #background {
@@ -87,33 +78,33 @@ body {
     bottom: -270px;
 }
 
-  footer {
+footer {
     display: none;
   }
   
 
 
-form * {
+.register-container form * {
   font-family: "Poppins", sans-serif;
   color: var(--letters);
   letter-spacing: 0.5px;
   outline: none;
   border: none;
 }
-form h3 {
+.register-container form h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
 }
 
-label {
+.register-container label {
   display: block;
   margin-top: 20px;
   font-size: 14px;
   font-weight: 500;
 }
-input {
+.register-container input {
   display: block;
   height: 50px;
   width: 100%;
@@ -278,15 +269,15 @@ input {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+.register-container input:checked + .slider {
   background-color: rgb(0, 221, 80);
 }
 
-input:focus + .slider {
+.register-container input:focus + .slider {
   box-shadow: 0 0 1px rgb(0, 221, 80);
 }
 
-input:checked + .slider:before {
+.register-container input:checked + .slider:before {
   transform: translateX(1.5em);
 }
 
