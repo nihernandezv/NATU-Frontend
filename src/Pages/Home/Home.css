@@ -5,34 +5,41 @@
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  width: 693px;
-  height: 780px;
-  left: 215px;
+  width: 685px;
+  height: 540px;
+  left: 145px;
   top: 200px;
   margin-top: 5px;
+  border-radius: 20px;
+  background-color:lavender;
 }
 
 /* Título del texto */
 .home-page-title {
-  width: 593px;
+  display: flex;
+  width: 665px;
   height: 247px;
-  font-family: 'Montserrat';
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 63px;
+  font-size: 60px;
+  line-height: 65px;
   display: flex;
   align-items: center;
-  color: #2B803F;
+  color: #33784a;
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
   margin-bottom: 0px;
+  margin-top: 15px;
+  text-align: right;
+  margin-right: auto;
 }
 
 /* Estilos del texto */
 .home-page-description {
+  display: flex;
   width: 593px;
   height: 147px;
   font-family: 'Montserrat';
@@ -46,7 +53,9 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin-top: 0px;
+  margin-top: 30px;
+  text-align: right;
+  margin-left: 45px;
 }
 
 /* Estilos del botón */
@@ -56,7 +65,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 2.5rem;
-  gap: 10px;
   width: 192px;
   height: 60px;
   background: #EB6613;
@@ -71,86 +79,60 @@
   cursor: pointer;
   transition: 0.2s;
   text-decoration: none;
+  margin-left: auto;
+
 }
 /* Estilos para la sección de la imagen */
 .home-image-section {
+  display: flex;
   width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
   margin-left: 880px; /* Espacio izquierdo entre el texto y la imagen */
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* Estilos para la imagen */
 .home-banner-image {
-  width: 90%;
-  height: 490px;
-  border-radius: 15px; /* Bordes redondeados para la imagen */
-}
-/*Animaciones para la imágen*/
-.parallax-container {
-  position: relative;
-  height: 490px;
-  overflow: hidden;
-}
-
-.parallax-image {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
   width: 100%;
   height: 100%;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .parallax-image {
-    animation: parallax 10s infinite linear;
-  }
-}
-
-@keyframes parallax {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(-20%, 0, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
+  border-radius: 15px; /* Bordes redondeados para la imagen */
 }
 
 /* Estilos para el contenedor Acerca */
 .acerca-container {
   margin-top: 0px;
-  display: flex;
+  display: auto;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   position: absolute;
-  width: 693px;
-  height: 780px;
+  width: 673px;
+  height: 550px;
   left: 715px;
   top: 830px;
+  border-radius: 20px;
+  background-color:#EAF2E8;
 }
 
 /* Estilos para el texto del título */
 .titulo-texto {
   width: 633px;
   height: 247px;
-  font-family: 'Montserrat';
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 63px;
+  line-height: 40px;
   display: flex;
   align-items: center;
-  color: #4C4C4C;
+  color: #d25925;
   flex:none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
   margin-bottom: 0px;
+  margin-left: auto;
+  
 
 }
 
@@ -160,10 +142,11 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 60px;
-  width: 741px;
-  height: 225px;
+  gap: 50px;
+  width: 693px;
+  height: 200px;
   top: 10px;
+
 }
 
 /* Estilos para el párrafo */
@@ -182,6 +165,8 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 30px;
+  margin-top: 0px;
 
 }
 /* Estilos para el botón Leer Más */
@@ -206,17 +191,19 @@
   cursor: pointer;
   transition: 0.2s;
   text-decoration: none;
+  margin-left: 30px;
 }
 
 /* Estilos para la sección de la imagen tomatoes */
 .acerca-image-section {
   width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
   margin-left: 150px; /* Espacio izquierdo entre el texto y la imagen */
-  margin-top: 160px;
+  margin-top: 245px;
 }
 
 /* Estilos para la imagen */
 .acerca-banner-image {
+  /*background-color:#EAF2E8;*/
   width: 90%;
   height: 470px;
   border-radius: 15px; /* Bordes redondeados para la imagen */
@@ -229,24 +216,24 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
-  background-color: #F8F8F8; /* Light beige */
+  background-color: EAF2E8; 
   width: 90%; /* Increased container width */
   max-width: 1000px;
-  height: 1100px;
+  height: 830px;
   margin: 0 auto;
-  margin-top: 100px;
-  border-radius: 15px;
+  margin-top: 150px;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden; /* Contener imágenes que sobresalen */
 }
 
 .beneficios-titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Yeseva One, cursive';
   font-size: 2.2rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
-  color: #B85A23; /* Color del título */
+  color: #a75a2d; /* Color del título */
 }
 
 .beneficios-lista {
@@ -312,6 +299,7 @@
   margin-top: 2rem;
   width: 300px;
   height: 50px;
+  line-height: 15px;
   background-color: #82B15A;
   border: 2px solid #82B15A;
   border-radius: 10px;
@@ -368,3 +356,78 @@
     margin: 0.5rem;
   }
 }
+/*Productos Vista V1*/
+.productos-vista {
+  margin: 2rem 0;
+  background-color: #F5F5F5; /* Color de fondo */
+  padding: 1rem;
+  border-radius: 10px; /* Bordes redondeados 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.titulo-ProductosVista{
+  font-family: 'Lexend , sans-serif ' ;
+  font-size: 2.9rem;
+  font-weight: 600;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #39884d; /* Color del título */
+
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.producto-item {
+  border: none; /* Elimina el borde por defecto */
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.producto-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+.producto-imagen {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.producto-nombre {
+  font-family: 'Lexend', sans-serif; 
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #39884d; 
+  text-decoration: none;
+
+}
+
+.producto-descripcion {
+  font-family: 'Lexend', sans-serif; 
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #666; 
+}
+
+.producto-precio {
+  font-family: 'Lexend', sans-serif; 
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #EB6613; /* Color del precio */
+}
+
+@media (min-width: 768px) {
+  .productos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+

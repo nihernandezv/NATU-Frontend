@@ -4,7 +4,7 @@ import './Home.css'
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Beneficios from './Beneficios';
-import Footer from '../Layout/Footer/Footer';
+import ProductosVista from './ProductosVista';
 
 export default function Inicio() {
   return (
@@ -12,10 +12,10 @@ export default function Inicio() {
       <div className="home-page-container">
         <div className="home-page-text-container">
           <h1 className="home-page-title animate__animated animate__fadeInUp">
-            ¿Quieres alimentar tu cuerpo y tu mente con productos naturales y saludables?
+            ¿Quieres alimentar tu cuerpo y tu mente con productos orgánicos y saludables?
           </h1>
           <p className="home-page-description animate__animated animate__fadeIn">
-            En Natu Tienda Orgánica encontrarás una gran variedad de productos de alta calidad, cultivados y fabricados por productores locales de pueblos y de toda Colombia. 
+            En Natu Tienda Orgánica encontrarás una gran variedad de productos de alta calidad, cultivados y fabricados por productores locales de pueblos de toda Colombia. 
           </p>
           <Link to="/products" className="home-page-button animate__animated animate__fadeIn animate__pulse">
             Productos <FiArrowRight />
@@ -23,7 +23,7 @@ export default function Inicio() {
         </div>
       </div>
       <div className="home-image-section parallax-container">
-        <img src="../../../Natu_Logo_.png" alt="Banner" className="home-banner-image parallax-image" />
+        <img src="https://acortar.link/1sQiAb" alt="Banner" className="home-banner-image parallax-image" />
       </div>
 
       <div className="acerca-container">
@@ -44,7 +44,9 @@ export default function Inicio() {
       </div>
       
       <Beneficios />
-      <Footer />
+      <ProductosVista />
+
+    
 
     </div>
   );

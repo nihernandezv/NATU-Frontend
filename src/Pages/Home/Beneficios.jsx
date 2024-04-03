@@ -9,37 +9,32 @@ export default function Beneficios() {
       <h2 className="beneficios-titulo">Beneficios de una alimentación natural y saludable</h2>
       <ul className="beneficios-lista">
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-organico.png" alt="Cultivados sin pesticidas" />
-          <h3>Cultivados sin pesticidas</h3>
-          <p>Productos orgánicos para tu bienestar y el del planeta.</p>
+          <img src="https://n9.cl/2bz0c" alt="Cultivados en el campo" />
+          <h3>Cultivados en el campo</h3>
+          <p>Productos orgánicos para tu bienestar y el del tu familia.</p>
         </li>
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-local.png" alt="Cultivados localmente" />
-          <h3>Cultivados localmente</h3>
-          <p>Apoyamos la economía local y reducimos la huella de carbono.</p>
+          <img src="https://n9.cl/argyd" alt="Productos locales" />
+          <h3>Productos Locales</h3>
+          <p>Apoyamos la economía local colombiana </p>
         </li>
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-gluten.png" alt="Libres de gluten" />
-          <h3>Libres de gluten</h3>
-          <p>Ideales para personas con celiaquía o sensibilidad al gluten.</p>
+          <img src="https://n9.cl/rql85" alt="Saludables" />
+          <h3>Saludables</h3>
+          <p>Productos cultivados y elaborados con cuidado y atención</p>
         </li>
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-vegano.png" alt="Veganos" />
-          <h3>Veganos</h3>
-          <p>No contienen ingredientes de origen animal.</p>
-        </li>
-        <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-fresco.png" alt="Frescos" />
+          <img src="https://n9.cl/i2s8d" alt="Frescos" />
           <h3>Frescos</h3>
           <p>Seleccionamos cuidadosamente los productos más frescos.</p>
         </li>
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-nutritivo.png" alt="Nutritivos" />
+          <img src="https://n9.cl/ehuxl" alt="Nutritivos" />
           <h3>Nutritivos</h3>
           <p>Ricos en vitaminas, minerales y antioxidantes.</p>
         </li>
         <li className="beneficio-item animate__animated animate__fadeInUp">
-          <img src="images/beneficio-sabroso.png" alt="Sabrosos" />
+          <img src="https://n9.cl/b8793" alt="Sabrosos" />
           <h3>Sabrosos</h3>
           <p>Disfruta de una gran variedad de sabores y texturas.</p>
         </li>
