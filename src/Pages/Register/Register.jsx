@@ -16,9 +16,9 @@ export default function Register() {
                 content="134771054109-qc1doubbb2akoqg3p0qre6ebheopsq9m.apps.googleusercontent.com"
             />
             <link href="Register.css" rel="stylesheet" />
-            <div id="background">
-                <div id="shape" />
-                <div id="shape" />
+            <div id="background1">
+                <div id="shape1" />
+                <div id="shape1" />
             </div>
             <form id="register-form" >
                 <img src="logo.png" id="img-centrada" alt="Logo" /> {/* Asegúrate de que la ruta de la imagen del logo sea correcta */}
