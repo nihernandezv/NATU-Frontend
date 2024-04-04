@@ -6,6 +6,7 @@ import Register from './Pages/Register/Register.jsx';
 import Login from './Pages/Login/Login.jsx';
 import Layout from './Pages/Layout/Layout.jsx';
 import Reset from './Pages/Recover/Reset.jsx';
+import Catalog from './Pages/Home/ProductosVista.jsx';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>} />
-          <Route path="product" element={<Product/>} />
+          <Route path="products" element={<Catalog/>} />
           <Route path="register" element={<Register/>} />
           <Route path="login" element={<Login/>} />
           <Route path="reset" element={<Reset/>} />

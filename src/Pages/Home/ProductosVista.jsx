@@ -32,6 +32,13 @@ export default function ProductosVista() {
         descripcion_corta: "Naranja valencia cultivada en Tocancipá Cundinamarca",
         precio: 1500,
       },
+      {
+        id: 5,
+        nombre: "Naranjas x 1kg",
+        imagen: "https://cdn.pixabay.com/photo/2012/02/19/18/05/oranges-15046_1280.jpg",
+        descripcion_corta: "Naranja valencia cultivada en Tocancipá Cundinamarca",
+        precio: 1500,
+      },
     ]);
   
     return (
