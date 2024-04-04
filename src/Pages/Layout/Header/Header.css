@@ -1,3 +1,11 @@
+nav  {
+    z-index: 100;
+}
+
+footer {
+    z-index: 90;
+}
+
 .btn-login {
     transition: background-color 0.3s ease;
     border-color: #EB6613;

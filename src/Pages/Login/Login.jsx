@@ -4,19 +4,18 @@ export default function Login() {
     return (
         <>
             <div id="login">
-                <div id="background">
+                {/*<div id="background">
                     <div id="shape"></div>
                     <div id="shape"></div>
-                </div>
+    </div>*/}
                 <div id="container"> {/* Agrega un contenedor de Bootstrap */}
-                    <div className="row">
-                        <div className="col-md-6 offset-md-3"> {/* Coloca el formulario en una columna centrada */}
+                        <div className=""> {/* Coloca el formulario en una columna centrada */}
                             <form id="login-form">
                                 <div id="logo">
                                     {/* <h1><a href="index.html">Gestore</a></h1> */}
                                     {/* <a href="index.html"><img src="assets/img/logo.png" alt="" id="img-fluid"></a> */}
                                 </div>
-                                <img src="logo.png" id="img-centrada" />
+                                <img src="Natu_Logo_.png" id="img-centrada" />
                                 <label htmlFor="username">Correo de usuario</label>
                                 <input type="text" id="username" className="form-control" placeholder="Email" />
                                 <label htmlFor="password">Contraseña</label>
@@ -41,7 +40,6 @@ export default function Login() {
                                 </a>
                             </form>
                         </div>
-                    </div>
                 </div>
             </div>
         </>
