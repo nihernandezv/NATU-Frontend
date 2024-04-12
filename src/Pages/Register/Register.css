@@ -89,58 +89,58 @@
   font-size: 14px;
   font-weight: 300;
 }
-::placeholder {
+.register-container ::placeholder {
   color: #88a;
   opacity: 0.7; /* Valor de opacidad (0 es completamente transparente, 1 es opaco) */
   font-style: italic; /* Aplicar cursiva */
 }
 
-.social {
+.register-container .social {
   margin-top: 10px;
   display: flex;
 }
-.social button {
+.register-container .social button {
   margin: 4px 2px;
 }
-.social div {
+.register-container .social div {
   width: 150px;
 
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.social div:hover {
+.register-container .social div:hover {
   background-color: rgba(255, 255, 255, 0.47);
 }
-.social .fb {
+.register-container .social .fb {
   border: 1px #cfdfff solid;
   border-radius: 2000px;
 }
-.go {
+.register-container .go {
   margin-left: 80px;
   border-radius: 2000px;
 }
 
-.go button {
+.register-container .go button {
   border: 1px #cfdfff solid;
   size: 300px;
   border-radius: 2000px;
 }
 
-.lgn {
+.register-container .lgn {
   border: 1px var(--letters-2) solid;
   border-radius: 8px;
 }
-.btn {
+.register-container .btn {
   border: 1px #cfcfff solid;
   margin-right: 200px;
 }
-.btn:hover {
+.register-container .btn:hover {
   background-color: rgba(205, 205, 255, 0.47);
 }
-.go:hover {
+.register-container .go:hover {
   background-color: rgba(4, 215, 255, 0.47);
 }
-#botonRegistro {
+.register-container #botonRegistro {
   margin-top: 20px;
   width: 100%;
   padding: 15px 25px;
@@ -159,7 +159,7 @@
   
 }
 
-#botonRegistro ::before {
+.register-container #botonRegistro ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -174,11 +174,11 @@
   transition: all 250ms;
 }
 
-#botonRegistro:hover {
+.register-container #botonRegistro:hover {
   color: var(--registrarse-static);
   background-color: var(--verde-3);
 }
-.logo h1 {
+.register-container .logo h1 {
   font-size: 24px;
   padding: 0 0 0 8px;
   margin: 11px 0;
@@ -191,7 +191,7 @@
   text-align: left;
 }
 
-.logo h1 a,
+.register-container .logo h1 a,
 .logo h1 a:hover {
   color: #545454;
   text-decoration: none;
