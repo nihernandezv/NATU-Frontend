@@ -9,6 +9,7 @@ import ProductosVista from './ProductosVista';
 export default function Inicio() {
   return (
     <div>
+      <div className="container-1">
       <div className="home-page-container">
         <div className="home-page-text-container">
           <h1 className="home-page-title animate__animated animate__fadeInUp">
@@ -25,7 +26,8 @@ export default function Inicio() {
       <div className="home-image-section parallax-container">
         <img src="https://acortar.link/1sQiAb" alt="Banner" className="home-banner-image parallax-image" />
       </div>
-
+      </div>
+      
       <div className="acerca-container">
         <div className="titulo-container">
           <h1 className="titulo-texto animate__animated animate__fadeInLeft">Descubre lo auténtico: Productos naturales de la tierra, cultivados con amor</h1>

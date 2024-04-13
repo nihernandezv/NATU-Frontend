@@ -1,4 +1,4 @@
-/* Contenedor principal */
+/* Contenedor principal 
 .home-page-container {
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   background-color:lavender;
 }
 
-/* Título del texto */
+/* Título del texto 
 .home-page-title {
   display: flex;
   width: 665px;
@@ -37,7 +37,7 @@
   margin-right: auto;
 }
 
-/* Estilos del texto */
+/* Estilos del texto 
 .home-page-description {
   display: flex;
   width: 593px;
@@ -58,7 +58,7 @@
   margin-left: 45px;
 }
 
-/* Estilos del botón */
+/* Estilos del botón 
 .home-page-button {
   display: flex;
   flex-direction: row;
@@ -81,22 +81,120 @@
   text-decoration: none;
   margin-left: auto;
 
-}
-/* Estilos para la sección de la imagen */
-.home-image-section {
-  display: flex;
-  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
-  margin-left: 880px; /* Espacio izquierdo entre el texto y la imagen */
-  margin-top: 80px;
+}*/
+/* Contenedor principal*/
+.home-page-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding: 20px; 
+  border-radius: 20px; 
+  background-color: lavender; 
+  width: 100%; 
+  max-width: 700px; 
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  position: relative; 
+  left: 0; /* Positions container at the left edge (optional) */
 }
 
-/* Estilos para la imagen */
+.home-page-text-container {
+  text-align: right; /* right text content */
+  margin-right: 8px;
+}
+
+/* Title styles (adjust as needed) */
+.home-page-title {
+  font-family: 'Yeseva One', sans-serif; /* Fallback font */
+  font-size: clamp(4rem, 4rem, 6rem); /* Adjust font size based on screen size */
+  line-height: 1.1; /* Adjust line-height for better readability */
+  color: #33784a;
+  margin-bottom: 20px; /* Add some margin below the title */
+}
+
+/* Description styles (adjust as needed) */
+.home-page-description {
+  font-family: 'Montserrat', sans-serif; /* Fallback font */
+  font-size: 1.2rem; /* Adjust font size for readability */
+  line-height: 1.5; /* Adjust line-height for better readability */
+  color: #828282;
+  margin-bottom: 30px; /* Add some margin below the description */
+}
+
+/* Button styles (adjust as needed) */
+.home-page-button {
+  display: flex-shrink;
+  width: 120px;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1rem; /* Adjust font size for smaller screens */
+  font-weight: 600;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  background: #EB6613;
+  margin: 0 auto; /* Center button horizontally */
+}
+
+
+.home-image-section {
+  width: 100%; /* Adjust based on your design */
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #39884d;
+  height: 100%; /* Adjust based on your design */
+  
+}
+
+.home-banner-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex-direction: column; 
+  align-items: flex-end;
+}
+
+/* Consultas de medios para responsividad (ajusta los puntos de interrupción según sea necesario) */
+
+@media (max-width: 768px) {
+  .home-image-section{
+    width: 100%; /* El contenedor de texto ocupa todo el ancho en pantallas pequeñas */
+  }
+  .home-image-section {
+    width: 100%; /* El contenedor de la imagen ocupa todo el ancho en pantallas pequeñas */
+    margin-top: 20px; /* Agrega un margen superior para una mejor separación en pantallas pequeñas */
+  }
+}
+
+ /*Estilos para la sección de la imagen 
+.home-image-section {
+  display: flex;
+  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal 
+  margin-left: 880px; /* Espacio izquierdo entre el texto y la imagen 
+  margin-top: 0;
+}
+
+
+/* Estilos para la imagen
 .home-banner-image {
   display: flex;
   width: 100%;
   height: 100%;
-  border-radius: 15px; /* Bordes redondeados para la imagen */
-}
+  border-radius: 15px; /* Bordes redondeados para la imagen 
+}*/
+
 
 /* Estilos para el contenedor Acerca */
 .acerca-container {
@@ -209,6 +307,33 @@
   border-radius: 15px; /* Bordes redondeados para la imagen */
 }
 
+/* Media queries para pantallas pequeñas (tablets and mobiles) */
+@media (max-width: 768px) {
+  /* Ajustar el diseño para pantallas pequeñas */
+  .home-page-container {
+    grid-template-columns: 1fr;  /* Una sola columna para el contenido */
+  }
+
+  .home-page-title, .titulo-texto {
+    font-size: 2.5rem;  /* Reducir el tamaño del título */
+    text-align: center; /* Centrar el texto en todas las secciones */
+  }
+
+  .home-page-description {
+    margin-bottom: 15px; /* Reducir el espacio entre el texto y el botón */
+  }
+
+  .home-image-section, .acerca-image-section {
+    display: none;  /* Ocultar las imágenes en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes adicionales para pantallas muy pequeñas (móviles) */
+  .home-page-button {
+    width: 150px; /* Reducir el ancho del botón */
+  }
+}
 
 /* Estilos para el apartado Beneficios */
 .beneficios-container {
