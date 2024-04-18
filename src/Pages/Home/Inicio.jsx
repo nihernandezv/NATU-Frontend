@@ -8,7 +8,8 @@ import ProductosVista from './ProductosVista';
 
 export default function Inicio() {
   return (
-    <div>
+    <div className='home-container'>
+    <div className="home-page-container-main">
       <div className="container-1">
       <div className="home-page-container">
         <div className="home-page-text-container">
@@ -23,8 +24,8 @@ export default function Inicio() {
           </Link>
         </div>
       </div>
-      <div className="home-image-section parallax-container">
-        <img src="https://acortar.link/1sQiAb" alt="Banner" className="home-banner-image parallax-image" />
+      <div className="home-image-section ">
+        <img src="https://acortar.link/1sQiAb" alt="Banner" className="home-banner-image" />
       </div>
       </div>
       
@@ -44,12 +45,11 @@ export default function Inicio() {
       <div className="acerca-image-section">
         <img src="../../../TomatoesC.png" alt="Banner" className="acerca-banner-image" />
       </div>
-      
-      <Beneficios />
-      <ProductosVista />
-
     
-
+    
+    </div>
+    <Beneficios />
+    <ProductosVista />
     </div>
   );
 }

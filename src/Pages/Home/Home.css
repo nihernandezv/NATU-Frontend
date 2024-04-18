@@ -82,7 +82,12 @@
   margin-left: auto;
 
 }*/
-/* Contenedor principal*/
+.container-1 {
+  display: flex;
+  flex-wrap: wrap; /* Asegura que los elementos se envuelvan en pantallas pequeñas */
+}
+
+/* Contenedor principal
 .home-page-container {
   display: flex; 
   flex-direction: column; 
@@ -97,9 +102,19 @@
   margin-right: 40px;
   margin-bottom: 40px;
   position: relative; 
-  left: 0; /* Positions container at the left edge (optional) */
-}
+  left: 0; 
+}*/
 
+.home-page-container {
+  display: flex;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: lavender;
+  margin-top: 40px;
+  margin-right: 20px; /* Añade un margen entre los contenedores */
+  margin-left: 20px; /* Añade un margen izquierdo */
+  max-width: 45%; /* Establece un ancho máximo para el contenedor */
+}
 .home-page-text-container {
   text-align: right; /* right text content */
   margin-right: 8px;
@@ -108,32 +123,27 @@
 /* Title styles (adjust as needed) */
 .home-page-title {
   font-family: 'Yeseva One', sans-serif; /* Fallback font */
-  font-size: clamp(4rem, 4rem, 6rem); /* Adjust font size based on screen size */
+  font-size: clamp(3.3vw, 3.5vw, 5.3rem); /* Adjust font size based on screen size */
   line-height: 1.1; /* Adjust line-height for better readability */
   color: #33784a;
-  margin-bottom: 20px; /* Add some margin below the title */
+  margin-bottom: 2vw; /* Add some margin below the title */
 }
 
 /* Description styles (adjust as needed) */
 .home-page-description {
   font-family: 'Montserrat', sans-serif; /* Fallback font */
-  font-size: 1.2rem; /* Adjust font size for readability */
+  font-size: clamp(1.8vw, 1.8vw, 1.8rem); /* Adjust font size for readability */
   line-height: 1.5; /* Adjust line-height for better readability */
   color: #828282;
-  margin-bottom: 30px; /* Add some margin below the description */
+  margin-bottom: 2vw; /* Add some margin below the description */
 }
 
 /* Button styles (adjust as needed) */
 .home-page-button {
-  display: flex-shrink;
-  width: 120px;
-  flex: 0 0 auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2.5rem;
-  border-radius: 5rem;
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  display: inline-block; /* Cambiado a inline-block para permitir el ajuste del ancho */
+  padding: 1.1vw 2.5vw; /* Ajusta el relleno del botón en función del tamaño de la pantalla */
+  border-radius: 2rem; /* Redondea los bordes del botón */
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem); /* Ajusta el tamaño de la fuente del botón según el ancho de la pantalla */
   font-weight: 600;
   color: white;
   outline: none;
@@ -145,17 +155,25 @@
 }
 
 
-.home-image-section {
-  width: 100%; /* Adjust based on your design */
+/*.home-image-section {
+  width: 100%;  Adjust based on your design 
   display: flex; 
   justify-content: flex-end;
   align-items: center;
   background-color: #39884d;
-  height: 100%; /* Adjust based on your design */
+  height: 100%; 
   
+}*/
+
+.home-image-section {
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 30px; /* Añade un margen entre los contenedores */
+  max-width: 45%;
 }
 
-.home-banner-image {
+/*.home-banner-image {
   max-width: 40%;
   height: auto;
   border-radius: 15px;
@@ -164,20 +182,41 @@
   margin-right: 40px;
   flex-direction: column; 
   align-items: flex-end;
+}*/
+
+.home-banner-image {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-/* Consultas de medios para responsividad (ajusta los puntos de interrupción según sea necesario) */
+/* Consultas de medios para responsividad */
+@media (max-width: 768px) {
+  .container-1 {
+    flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+  }
+
+  .home-page-container,
+  .home-image-section {
+    margin: 20px auto; /* Centra los contenedores en pantallas pequeñas */
+    width: 90%; /* Ajusta el ancho de los contenedores en pantallas pequeñas */
+    max-width: 500px; /* Limita el ancho máximo de los contenedores en pantallas pequeñas */
+  }
+}
+
+/* Consultas de medios para responsividad (ajusta los puntos de interrupción según sea necesario)
 
 @media (max-width: 768px) {
   .home-image-section{
-    width: 100%; /* El contenedor de texto ocupa todo el ancho en pantallas pequeñas */
+    width: 100%; /* El contenedor de texto ocupa todo el ancho en pantallas pequeñas 
   }
   .home-image-section {
-    width: 100%; /* El contenedor de la imagen ocupa todo el ancho en pantallas pequeñas */
-    margin-top: 20px; /* Agrega un margen superior para una mejor separación en pantallas pequeñas */
+    width: 100%; /* El contenedor de la imagen ocupa todo el ancho en pantallas pequeñas 
+    margin-top: 20px; /* Agrega un margen superior para una mejor separación en pantallas pequeñas 
   }
 }
-
+*/
  /*Estilos para la sección de la imagen 
 .home-image-section {
   display: flex;
