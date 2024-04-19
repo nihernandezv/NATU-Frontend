@@ -1,109 +1,8 @@
-/* Contenedor principal 
-.home-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  width: 685px;
-  height: 540px;
-  left: 145px;
-  top: 200px;
-  margin-top: 5px;
-  border-radius: 20px;
-  background-color:lavender;
-}
 
-/* Título del texto 
-.home-page-title {
-  display: flex;
-  width: 665px;
-  height: 247px;
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 65px;
-  display: flex;
-  align-items: center;
-  color: #33784a;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin-bottom: 0px;
-  margin-top: 15px;
-  text-align: right;
-  margin-right: auto;
-}
-
-/* Estilos del texto 
-.home-page-description {
-  display: flex;
-  width: 593px;
-  height: 147px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #828282;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin-top: 30px;
-  text-align: right;
-  margin-left: 45px;
-}
-
-/* Estilos del botón 
-.home-page-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2.5rem;
-  width: 192px;
-  height: 60px;
-  background: #EB6613;
-  border-radius: 5rem;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  transition: 0.2s;
-  text-decoration: none;
-  margin-left: auto;
-
-}*/
 .container-1 {
   display: flex;
   flex-wrap: wrap; /* Asegura que los elementos se envuelvan en pantallas pequeñas */
 }
-
-/* Contenedor principal
-.home-page-container {
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-start; 
-  padding: 20px; 
-  border-radius: 20px; 
-  background-color: lavender; 
-  width: 100%; 
-  max-width: 700px; 
-  margin-top: 40px;
-  margin-left: 50px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  position: relative; 
-  left: 0; 
-}*/
 
 .home-page-container {
   display: flex;
@@ -111,78 +10,77 @@
   border-radius: 20px;
   background-color: lavender;
   margin-top: 40px;
-  margin-right: 20px; /* Añade un margen entre los contenedores */
-  margin-left: 20px; /* Añade un margen izquierdo */
+  margin-right: 20px; 
+  margin-left: 30px; 
   max-width: 45%; /* Establece un ancho máximo para el contenedor */
 }
 .home-page-text-container {
-  text-align: right; /* right text content */
+  text-align: right; 
   margin-right: 8px;
 }
 
-/* Title styles (adjust as needed) */
+/* Estilos del título principal */
 .home-page-title {
-  font-family: 'Yeseva One', sans-serif; /* Fallback font */
-  font-size: clamp(3.3vw, 3.5vw, 5.3rem); /* Adjust font size based on screen size */
-  line-height: 1.1; /* Adjust line-height for better readability */
+  font-family: 'Yeseva One', sans-serif; 
+  font-size: clamp(3.5vw, 3.5vw, 5.3rem); 
+  line-height: 1.1; 
   color: #33784a;
-  margin-bottom: 2vw; /* Add some margin below the title */
+  margin-bottom: 2vw; 
+  font-weight: bold; 
 }
 
-/* Description styles (adjust as needed) */
+/*Estilos del párrafo principal */
 .home-page-description {
-  font-family: 'Montserrat', sans-serif; /* Fallback font */
-  font-size: clamp(1.8vw, 1.8vw, 1.8rem); /* Adjust font size for readability */
-  line-height: 1.5; /* Adjust line-height for better readability */
+  font-family: 'Montserrat', sans-serif; 
+  font-size: clamp(1.7vw, 1.7vw, 1.5rem); 
+  line-height: 1.5; 
   color: #828282;
-  margin-bottom: 2vw; /* Add some margin below the description */
+  margin-bottom: 2vw; 
 }
 
-/* Button styles (adjust as needed) */
+/* Estilos botón principal */
 .home-page-button {
   display: inline-block; /* Cambiado a inline-block para permitir el ajuste del ancho */
   padding: 1.1vw 2.5vw; /* Ajusta el relleno del botón en función del tamaño de la pantalla */
   border-radius: 2rem; /* Redondea los bordes del botón */
   font-size: clamp(0.8rem, 1.5vw, 1.3rem); /* Ajusta el tamaño de la fuente del botón según el ancho de la pantalla */
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   outline: none;
   cursor: pointer;
-  transition: 0.2s;
   text-decoration: none;
   background: #EB6613;
-  margin: 0 auto; /* Center button horizontally */
+  margin: 0 auto;
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+
+  /* Animación al pasar el cursor */
+  animation: pulse 1s infinite alternate; 
 }
 
+/* Definición de la animación 'pulse' */
+@keyframes pulse {
+  from {
+    transform: scale(0.85); /* Escala normal */
+  }
+  to {
+    transform: scale(0.9); /* Escala aumentada */
+  }
+}
 
-/*.home-image-section {
-  width: 100%;  Adjust based on your design 
-  display: flex; 
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #39884d;
-  height: 100%; 
-  
-}*/
+/* Cambio de color al pasar el cursor */
+.home-page-button:hover {
+  background-color: #a7845f; /* Cambia el color de fondo al pasar el cursor */
+}
+
 
 .home-image-section {
   justify-content: flex-end;
   align-items: center;
   margin-top: 40px;
-  margin-left: 30px; /* Añade un margen entre los contenedores */
+  margin-left: 30px; 
   max-width: 45%;
 }
 
-/*.home-banner-image {
-  max-width: 40%;
-  height: auto;
-  border-radius: 15px;
-  object-fit: cover;
-  margin-left: 40px;
-  margin-right: 40px;
-  flex-direction: column; 
-  align-items: flex-end;
-}*/
 
 .home-banner-image {
   max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
@@ -205,199 +103,223 @@
   }
 }
 
-/* Consultas de medios para responsividad (ajusta los puntos de interrupción según sea necesario)
-
-@media (max-width: 768px) {
-  .home-image-section{
-    width: 100%; /* El contenedor de texto ocupa todo el ancho en pantallas pequeñas 
-  }
-  .home-image-section {
-    width: 100%; /* El contenedor de la imagen ocupa todo el ancho en pantallas pequeñas 
-    margin-top: 20px; /* Agrega un margen superior para una mejor separación en pantallas pequeñas 
-  }
-}
-*/
- /*Estilos para la sección de la imagen 
-.home-image-section {
-  display: flex;
-  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal 
-  margin-left: 880px; /* Espacio izquierdo entre el texto y la imagen 
-  margin-top: 0;
+/* Animación de fondo */
+.container-1 {
+  background-image: linear-gradient(to bottom, #a9d4ab, #dccdb5); /* Gradiente de fondo */
+  animation: backgroundAnimation 5s linear infinite; /* Animación de desplazamiento suave */
 }
 
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%; /* Posición inicial del fondo */
+  }
+  100% {
+    background-position: 90% 50%; /* Posición final del fondo */
+  }
+}
 
-/* Estilos para la imagen
-.home-banner-image {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px; /* Bordes redondeados para la imagen 
-}*/
+/* Animación de desplazamiento */
+.home-page-container, .home-image-section {
+  opacity: 1; /* Oculta los elementos al principio */
+  transition: opacity 0.5s ease; /* Transiciones suaves */
+}
+
+.container-1.in-view .home-page-container, .container-1.in-view .home-image-section {
+  opacity: 1; /* Muestra los elementos cuando están en la vista */
+}
 
 
 /* Estilos para el contenedor Acerca */
-.acerca-container {
-  margin-top: 0px;
-  display: auto;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  width: 673px;
-  height: 550px;
-  left: 715px;
-  top: 830px;
+.container-2 {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.home-page-container-2 {
+  flex: 1;
+  padding: 30px;
   border-radius: 20px;
-  background-color:#EAF2E8;
+  background-color: lavender;
+  margin-top: 70px;
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 30px;
+  max-width: 45%; 
 }
 
-/* Estilos para el texto del título */
-.titulo-texto {
-  width: 633px;
-  height: 247px;
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
+.home-page-text-container-2 {
+  text-align: left; 
+}
+
+/* Título del 2do contenedor */
+.home-page-title-2 {
+  font-family: 'Yeseva One', sans-serif; 
+  font-size: clamp(3.5vw, 3.5vw, 5.3rem); 
+  line-height: 1.1; 
   color: #d25925;
-  flex:none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin-bottom: 0px;
-  margin-left: auto;
-  
+  margin-bottom: 2vw; 
+  font-weight: bold; 
+} 
 
-}
-
-/* Estilos para el contenedor del párrafo */
-.texto-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 50px;
-  width: 693px;
-  height: 200px;
-  top: 10px;
-
-}
-
-/* Estilos para el párrafo */
-.parrafo-texto {
-  width: 593px;
-  height: 140px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  align-items: left;
-  text-align: left;
+/* Texto del contenedor 2*/
+.home-page-description-2 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: clamp(1.7vw, 1.7vw, 1.5rem);
+  line-height: 1.5;
   color: #828282;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin-left: 30px;
-  margin-top: 0px;
-
+  margin-bottom: 2vw;
 }
-/* Estilos para el botón Leer Más */
-.leer-mas-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2.5rem;
-  gap: 10px;
-  width: 195px;
-  height: 60px;
-  background: #EB6613;
-  border-radius: 5rem;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
+
+/* Botón 2 */
+.home-page-button-2 {
+  display: inline-block; /* Cambiado a inline-block para permitir el ajuste del ancho */
+  padding: 1.1vw 2.5vw; /* Ajusta el relleno del botón en función del tamaño de la pantalla */
+  border-radius: 2rem; /* Redondea los bordes del botón */
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem); /* Ajusta el tamaño de la fuente del botón según el ancho de la pantalla */
+  font-weight: 500;
   color: white;
   outline: none;
   cursor: pointer;
-  transition: 0.2s;
   text-decoration: none;
-  margin-left: 30px;
+  background: #EB6613;
+  margin: 0 auto;
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  
+
+  /* Animación al pasar el cursor */
+  animation: pulse 1s infinite alternate; /* Aplica la animación 'pulse' de 1 segundo de duración, infinitamente y de manera alternada */
 }
 
-/* Estilos para la sección de la imagen tomatoes */
-.acerca-image-section {
-  width: 35%; /* La imagen ocupa hasta la mitad del contenedor principal */
-  margin-left: 150px; /* Espacio izquierdo entre el texto y la imagen */
-  margin-top: 245px;
-}
-
-/* Estilos para la imagen */
-.acerca-banner-image {
-  /*background-color:#EAF2E8;*/
-  width: 90%;
-  height: 470px;
-  border-radius: 15px; /* Bordes redondeados para la imagen */
-}
-
-/* Media queries para pantallas pequeñas (tablets and mobiles) */
-@media (max-width: 768px) {
-  /* Ajustar el diseño para pantallas pequeñas */
-  .home-page-container {
-    grid-template-columns: 1fr;  /* Una sola columna para el contenido */
+/* Definición de la animación 'pulse' */
+@keyframes pulse {
+  from {
+    transform: scale(0.85); /* Escala normal */
   }
-
-  .home-page-title, .titulo-texto {
-    font-size: 2.5rem;  /* Reducir el tamaño del título */
-    text-align: center; /* Centrar el texto en todas las secciones */
-  }
-
-  .home-page-description {
-    margin-bottom: 15px; /* Reducir el espacio entre el texto y el botón */
-  }
-
-  .home-image-section, .acerca-image-section {
-    display: none;  /* Ocultar las imágenes en pantallas muy pequeñas */
+  to {
+    transform: scale(0.9); /* Escala aumentada */
   }
 }
 
-@media (max-width: 480px) {
-  /* Ajustes adicionales para pantallas muy pequeñas (móviles) */
-  .home-page-button {
-    width: 150px; /* Reducir el ancho del botón */
+/* Cambio de color al pasar el cursor */
+.home-page-button-2:hover {
+  background-color: #a7845f; /* Cambia el color de fondo al pasar el cursor */
+}
+
+
+.home-image-section-2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Alinea la imagen a la izquierda */
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 60px; /* Añade un margen entre los contenedores */
+  max-width: 45%; /* Establece un ancho máximo para el contenedor */
+}
+
+.home-banner-image-2 {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Consultas de medios para responsividad */
+@media (max-width: 750px) {
+  .container-2 {
+    flex-direction: column; 
+  }
+
+  .home-page-container-2,
+  .home-image-section-2 {
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 500px;
+  }
+
+  .home-page-text-container-2 {
+    text-align: center; /* Alinea el texto al centro en pantallas pequeñas */
+  }
+
+  .home-image-section-2 {
+    justify-content: center; /* Alinea la imagen al centro en pantallas pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
   }
 }
 
-/* Estilos para el apartado Beneficios */
+/* Animación de fondo */
+.container-2 {
+  background-image: linear-gradient(to bottom, #dccdb5, #a9d4ab); /* Gradiente de fondo */
+  animation: backgroundAnimation 5s linear infinite; /* Animación de desplazamiento suave */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%; /* Posición inicial del fondo */
+  }
+  100% {
+    background-position: 90% 50%; /* Posición final del fondo */
+  }
+}
+
+/* Animación de desplazamiento */
+.home-page-container-2, .home-image-section-2 {
+  opacity: 1; /* Oculta los elementos al principio */
+  transition: opacity 0.5s ease; /* Transiciones suaves */
+}
+
+.container-2.in-view .home-page-container-2, .container-2.in-view .home-image-section-2 {
+  opacity: 1; /* Muestra los elementos cuando están en la vista */
+}
+
+
+
+/*----------------- Estilos para el apartado Beneficios ---------------------------*/
 .beneficios-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
-  background-color: EAF2E8; 
-  width: 90%; /* Increased container width */
+  padding: 3vw 0; /* Utilizamos vw para el padding en lugar de rem */
+  background-color: #EAF2E8; /* Asegúrate de utilizar el formato correcto de color (#) */
+  width: 90%; /* Utilizamos porcentaje (%) para el ancho */
   max-width: 1000px;
-  height: 830px;
-  margin: 0 auto;
-  margin-top: 150px;
+  /* height: 830px; Quitamos la altura fija */
+  margin: 150px auto; /* Centramos el contenedor vertical y horizontalmente */
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(16, 15, 15, 0.1);
   overflow: hidden; /* Contener imágenes que sobresalen */
+}
+
+/* Consultas de medios para responsividad */
+@media (max-width: 768px) {
+  .beneficios-container {
+    padding: 5vw 0; /* Ajustamos el padding para pantallas pequeñas */
+    margin-top: 100px; /* Ajustamos el margen superior */
+  }
+}
+
+/* Animación de fondo */
+.beneficios-container {
+  background-image: linear-gradient(to bottom, #dccdb5, #a9d4ab); /* Gradiente de fondo */
+  animation: backgroundAnimation 5s linear infinite; /* Animación de desplazamiento suave */
+  
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%; /* Posición inicial del fondo */
+  }
+  100% {
+    background-position: 90% 50%; /* Posición final del fondo */
+  }
 }
 
 .beneficios-titulo {
   font-family: 'Yeseva One, cursive';
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 650;
   text-align: center;
   margin-bottom: 2rem;
-  color: #a75a2d; /* Color del título */
+  color: #4e46469a; 
 }
 
 .beneficios-lista {
@@ -426,7 +348,7 @@
 }
 
 .beneficio-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(216, 146, 16, 0.473);
   transform: translateY(-5px); /* Efecto al pasar el mouse */
 }
 
@@ -480,7 +402,7 @@
 .beneficios-boton:hover {
   background-color: #d7540b; /* Tono más oscuro al pasar el mouse */
 }
-
+/*
 @media (max-width: 768px) {
   .beneficios-container {
     width: 90%;
@@ -491,7 +413,7 @@
     height: 200px;
   }
 
-  /* Ajustes adicionales para móviles */
+  /* Ajustes adicionales para móviles 
   .beneficios-titulo {
     font-size: 1.8rem;
   }
@@ -509,7 +431,7 @@
     font-size: 1.2rem;
   }
 }
-
+*/
 /* Ajustes adicionales para una mejor visualización en móviles */
 @media (max-width: 480px) {
   .beneficios-lista {

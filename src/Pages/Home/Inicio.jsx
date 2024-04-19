@@ -28,7 +28,35 @@ export default function Inicio() {
         <img src="https://acortar.link/1sQiAb" alt="Banner" className="home-banner-image" />
       </div>
       </div>
+
+      <div className="container-2">
+      <div className="home-image-section-2 ">
+        <img src="../../../TomatoesC.png" alt="Banner" className="home-banner-image-2" />
+      </div>
+      <div className="home-page-container-2">
+        <div className="home-page-text-container-2">
+          <h1 className="home-page-title-2 animate__animated animate__fadeInUp">
+            Descubre lo auténtico: Productos naturales de la tierra, cultivados con amor
+          </h1>
+          <p className="home-page-description-2 animate__animated animate__fadeIn">
+            En Natu, respaldamos la economía local al ofrecerte productos saludables y naturales, cultivados y elaborados en el campo por familias colombianas trabajadoras. Nuestro objetivo es brindarte una experiencia auténtica y promover un estilo de vida más saludable para que puedas disfrutar plenamente de nuestros productos.
+          </p>
+          <Link to="/products" className="home-page-button-2 animate__animated animate__fadeIn animate__pulse">
+            Leer más... <FiArrowRight />
+          </Link>
+        </div>
+      </div>
       
+      </div>
+
+
+
+
+
+
+
+
+{/*}
       <div className="acerca-container">
         <div className="titulo-container">
           <h1 className="titulo-texto animate__animated animate__fadeInLeft">Descubre lo auténtico: Productos naturales de la tierra, cultivados con amor</h1>
@@ -41,11 +69,12 @@ export default function Inicio() {
             Leer Más...<FiArrowRight />
           </Link>
         </div>
-      </div>
-      <div className="acerca-image-section">
+        <div className="acerca-image-section">
         <img src="../../../TomatoesC.png" alt="Banner" className="acerca-banner-image" />
       </div>
-    
+      </div>
+      
+  */}
     
     </div>
     <Beneficios />

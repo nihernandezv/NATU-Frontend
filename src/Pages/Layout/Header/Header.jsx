@@ -27,7 +27,21 @@ export default function Header() {
                   <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="#">Legumbres</a></li>
+                                <li><a class="dropdown-item" href="#">Frutas</a></li>
+                                <li><a class="dropdown-item" href="#">Verduras</a></li>
+                                <li><a class="dropdown-item" href="#">Cafés</a></li>
+                            </ul>
+                            </li>
+                        </ul>
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    
                       <li className="nav-item">
                           <Link className="nav-link" aria-current="page" to="/">Inicio</Link>
                       </li>
@@ -51,7 +65,7 @@ export default function Header() {
                               aria-label="Buscar" 
                               value={searchTerm}
                               onChange={handleSearch}
-                              style={{ width: '400px', marginRight: '5px' }} 
+                              style={{ width: '300px', marginRight: '5px' }} 
                           />
                           <button className="btn btn-outline-success" type="submit">
                               <BiSearch />

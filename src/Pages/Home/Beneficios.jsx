@@ -39,7 +39,7 @@ export default function Beneficios() {
           <p>Disfruta de una gran variedad de sabores y texturas.</p>
         </li>
       </ul>
-      <Link to="/productos" className="beneficios-boton">
+      <Link to="/products" className="beneficios-boton">
         Descubre más sobre nuestros productos
       </Link>
     </div>
