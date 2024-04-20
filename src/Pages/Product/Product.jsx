@@ -1,9 +1,9 @@
 import "./Product.css";
 
-export default function Products() {
+export default function Products({data}) {
     return (
         <div>
-            <h1>Product</h1>
+            <h1>Productoooooooxxxxxxxxxxx</h1>
         </div>
     );
 }
